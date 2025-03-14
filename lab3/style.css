@@ -1,0 +1,121 @@
+/* CSS Variables */
+:root {
+  --primary-color: rgba(255, 228, 196, 0.795);
+  --secondary-color: burlywood;
+  --link-color: rgb(30, 173, 255);
+}
+
+html {
+  width: 1020px;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* nav bar */
+.navbar {
+  background-color: var(--primary-color);
+  max-width: 1020px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.navitem {
+  margin-right: 20px;
+}
+
+.navitem:hover {
+  color: var(--secondary-color);
+}
+
+/* main  */
+.main {
+  width: 1020px;
+  text-align: center;
+  padding: 20px;
+}
+
+.date {
+  font-size: 0.9em;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.sideImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideImg p {
+  padding: 0 70px;
+}
+
+.challenges {
+  padding: 0 200px;
+}
+/* profile card */
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+}
+
+.followers {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.followers a {
+  color: var(--link-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.followers a:hover {
+  color: var(--secondary-color);
+}
+
+h1,
+h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-weight: 500px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
