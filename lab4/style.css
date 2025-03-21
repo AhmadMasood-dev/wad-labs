@@ -1,0 +1,193 @@
+/* CSS Variables */
+:root {
+  --primary-color: #e0e1dd;
+  --secondary-color: #fcbf49;
+  --link-color: rgb(30, 173, 255);
+}
+
+html {
+  width: 1020px;
+  margin: auto;
+  scroll-behavior: smooth;
+}
+
+body {
+
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* nav bar */
+.navbar {
+  background-color: var(--primary-color);
+  max-width: 1020px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.navitem {
+  margin-right: 20px;
+}
+
+.navitem:hover {
+  color: var(--secondary-color);
+  transition: 0.3s ease-out;
+}
+
+
+
+h1,
+h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 500px;
+  padding: 10px 0;
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+td {
+  border: 1px solid #ddd;
+
+  text-align: center;
+}
+
+th {
+  border: 1px solid rgb(59, 45, 45);
+  padding: 8px;
+  text-align: center;
+
+  background-color: #cfabab;
+
+}
+
+tr {
+  padding-bottom: 10px;
+}
+
+tr:hover {
+  background-color: #d0f4de;
+}
+
+form {
+  max-width: 600px;
+  padding: 40px 30px;
+  background: #FCE7C8;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  width: 80%;
+
+  font-weight: bold;
+}
+
+input {
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 0
+}
+
+#grade {
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  background-color: #db9f8a;
+  color: white;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 30px;
+}
+
+.radioButton {
+  display: flex;
+  gap: 20px;
+}
+
+
+button {
+  background-color: #35b2d8;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px 5px;
+  margin: 20px 0;
+}
+
+button:hover {
+  background-color: #5eb763;
+  transition: 0.3s ease-out;
+}
+
+/* profile card */
+.profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 70%;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+}
+
+.followers {
+  text-align: left;
+  margin-left: 20px;
+
+}
+
+.followers a {
+  color: var(--link-color);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.followers a:hover {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Masood</title>
+    <link rel="icon" href="./SpaceX-1.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="./pngwing.com.png" width="250px" height="50px" alt="SpaceX Logo" />
+      <div>
+        <a href="#foundaing" class="navitem">Foundaing</a>
+        <a href="#challenges" class="navitem">challenges </a>
+        <a href="#profile-card" class="navitem">profile-card</a>
+      </div>
+    </nav>
+
+   
+   
+   
+
+
+
+    
+    <h1>Student Gradesheet</h1>
+
+        <table>
+            <caption>Student Information and Academic Performance</caption>
+            
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Grade</th>
+                <th>Passed</th>
+            </tr>
+            
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Ahmed</td>
+                    <td>20</td>
+                    <td>A</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Sara</td>
+                    <td>19</td>
+                    <td>D</td>
+                    <td>No</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Ali</td>
+                <td>21</td>
+                <td>C</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Malik</td>
+                <td>20</td>
+                <td>A-</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Zohiab</td>
+                <td>22</td>
+                <td>B</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Ahmed</td>
+                <td>20</td>
+                <td>A</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Sara</td>
+                <td>19</td>
+                <td>D</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>Ali</td>
+                <td>21</td>
+                <td>C</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>Malik</td>
+                <td>20</td>
+                <td>A-</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>Zohiab</td>
+                <td>22</td>
+                <td>B</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <form>
+      <h2>Add a New Student</h2>
+        <label for="rollNumber">Roll Number:</label>
+        <input type="number" id="rollNumber" name="rollNumber" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="30" required>
+
+
+        <label for="grade">Grade</label>
+        <select id="grade" name="grade"  required>
+            <option value="">Select</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+   <br>
+         <label for="passed">Passed</label>
+<div class="radio-group">
+  <div class="radioButton">
+
+    <input type="radio" id="yes" name="passed" value="yes" required>
+    <label for="yes">Yes</label>
+  </div>
+<div class="radioButton">
+
+  <input type="radio" id="no" name="passed" value="no">
+  <label for="no">No</label>
+</div>
+</div>
+
+   
+        <button type="submit">Add Student</button>
+    </form>
+
+    <div id="profile-card" class="profile-card">
+      <img src="./mepic.jpg" alt="Profile Picture" class="profile-picture" />
+      <div class="followers">
+        <h2>Ahmad Masood</h2>
+        <p>I’m currently working on Web Development.</p>
+        <p>I’m looking to collaborate on Website Development.</p>
+        <a href="https://github.com/AhmadMasood-dev" target="_blank"
+          >GitHub Account Link</a
+        >
+        <a href="#">Followers: 1,234</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>Report</h2>
+    <p style="padding: 4px 20px;">
+      I make the Gradesheet of the students I have added the information of 10 students like his roll number, name, age, grade, and passed or not 
+      students in the table. I have also added a form to add a new student and a profile card of mine.
+
+    </p>
+    <hr/>
+    <footer style="text-align: right;">
+      <p>© 2025 Ahmad Masood.</p>
+    </footer>
+  </body>
+</html>
