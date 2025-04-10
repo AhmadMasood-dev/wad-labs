@@ -1,0 +1,228 @@
+/* General styling */
+:root {
+  --primary-color: #e0e1dd;
+  --secondary-color: burlywood;
+  --link-color: rgb(30, 173, 255);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1020px;
+  margin: auto;
+  grid-template-areas:
+    "navbar navbar"
+    "main main"
+    "challenges challenges"
+    "debris crash-video"
+    "profile-card profile-card"
+    "footer footer";
+}
+
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 10px;
+
+  height: 60px;
+}
+.navbar img {
+  width: 200px;
+  height: auto;
+  /* margin-right: 20px; */
+}
+.navitem {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.navitem:hover {
+  color: var(--secondary-color);
+}
+
+.main {
+  /* background-color: white; */
+  grid-area: main;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sideImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideImg p {
+  padding: 0 20px;
+  margin: 0 30px;
+}
+
+.sideImg img {
+  width: 300px;
+  border-radius: 10px;
+}
+li {
+  list-style-type: none;
+}
+#challenges {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  grid-area: challenges;
+}
+#debris {
+  grid-area: debris;
+}
+#crash-video {
+  grid-area: crash-video;
+}
+.profile-card {
+  grid-area: profile-card;
+  margin: auto;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+
+  border: 2px solid var(--secondary-color);
+  transition: all 0.7s ease-in-out; /* Add transition here for smoothness */
+}
+
+.profile-picture:hover {
+  width: 155px;
+  height: 155px;
+}
+
+.followers {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.followers a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.followers a:hover {
+  color: var(--secondary-color);
+}
+
+footer {
+  text-align: center;
+  grid-area: footer;
+  margin-top: 20px;
+}
+/* General Styling for Smaller Screens */
+@media screen and (max-width: 768px) {
+  /* .navbar div {
+    flex-direction: column;
+    align-items: center;
+    } */
+  .container {
+    /* grid-template-columns: 1fr; */
+    grid-template-areas:
+      "navbar navbar"
+      "main main"
+      "challenges challenges"
+      "debris crash-video"
+      "profile-card profile-card"
+      "footer footer";
+  }
+  .navbar {
+    flex-direction: column;
+    height: 80px;
+  }
+  .navbar img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .sideImg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-card {
+    width: 400px;
+  }
+
+  .followers {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* .navbar div {
+        flex-direction: column;
+        align-items: center;
+        } */
+  .navitem {
+    font-size: medium;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navbar navbar"
+      "main main"
+      "challenges challenges"
+      "debris debris"
+      "profile-card profile-card"
+      "footer footer";
+  }
+  #crash-video {
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  .sideImg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+  }
+
+  .followers {
+    text-align: center;
+  }
+}
