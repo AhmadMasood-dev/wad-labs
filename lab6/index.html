@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Masood</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="p-0 m-0 font-sans text-gray-800 bg-gray-100">
+    <div class="grid max-w-5xl grid-cols-1 gap-5 p-5 mx-auto md:grid-cols-2">
+      <nav
+        class="col-span-2 flex flex-col md:flex-row justify-between items-center bg-[#e0e1dd] px-5 py-3 rounded-lg h-auto md:h-16"
+      >
+        <img
+          src="./img/spacex.png"
+          alt="SpaceX Logo"
+          class="w-48 h-auto mb-3 md:mb-0"
+        />
+        <div class="flex space-x-5">
+          <a href="#founding" class="text-lg text-gray-800 hover:text-burlywood"
+            >Founding</a
+          >
+          <a
+            href="#challenges"
+            class="text-lg text-gray-800 hover:text-burlywood"
+            >Challenges</a
+          >
+          <a
+            href="#profile-card"
+            class="text-lg text-gray-800 hover:text-burlywood"
+            >Profile Card</a
+          >
+        </div>
+      </nav>
+
+      <section
+        id="founding"
+        class="col-span-2 p-5 text-center bg-white rounded-lg shadow"
+      >
+        <h1 class="mb-2 text-2xl font-bold">Founding</h1>
+        <p class="mb-4 text-sm text-gray-500">Posted on: 13 March 2025</p>
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <p class="mb-5 md:px-5 md:mb-0">
+            In early 2001, Elon Musk met Robert Zubrin and donated $100,000 to
+            his Mars Society, joining its board of directors for a short time.
+          </p>
+          <img src="./img/rocket.jpg" alt="Rocket" class="rounded-lg w-72" />
+        </div>
+        <h2 class="mt-5 mb-3 text-xl font-semibold">
+          Why Space Exploration Matters
+        </h2>
+        <ul class="space-y-2 list-none">
+          <li>Inspires the next generation</li>
+          <li>Advances in technology</li>
+          <li>Expanding human knowledge</li>
+        </ul>
+      </section>
+
+      <section
+        id="debris"
+        class="col-span-2 p-5 bg-white rounded-lg shadow md:col-span-1"
+      >
+        <h2 class="mb-3 text-xl font-semibold">SpaceX Debris Crash</h2>
+        <p>
+          The SpaceX Falcon 9 rocket is used to transport people and payloads
+          into the Earth's thermosphere and sometimes beyond. It is designed to
+          be reusable. The rocket which created this debris was launched by
+          SpaceX from the Vandenberg Air Force Base in California on 1 February.
+        </p>
+      </section>
+
+      <section
+        id="crash-video"
+        class="flex items-center justify-center col-span-2 md:col-span-1"
+      >
+        <video
+          src="./img/crash.mp4"
+          width="320"
+          height="240"
+          autoplay
+          muted
+          controls
+          class="rounded-md shadow-md"
+        ></video>
+      </section>
+
+      <section
+        id="challenges1"
+        class="col-span-2 p-5 text-center bg-white rounded-lg shadow md:col-span-1"
+      >
+        <h2 class="mb-3 text-xl font-semibold">Challenges Ahead</h2>
+        <p>
+          SpaceX is grappling with scrutiny over Elon Musk's leadership style,
+          raising concerns about operational sustainability.
+        </p>
+      </section>
+      <section
+        id="challenges2"
+        class="col-span-2 p-5 text-center bg-white rounded-lg shadow md:col-span-1"
+      >
+        <h2 class="mb-3 text-xl font-semibold">HUMANITY MULTIPLANETARY</h2>
+        <p>
+          Building on the achievements of Falcon 9 and Falcon Heavy, SpaceX is
+          working on a next generation of fully reusable launch vehicles that
+          will be the most powerful ever built, capable of carrying humans to
+          Mars and other destinations in the solar system.
+        </p>
+      </section>
+
+      <section
+        id="profile-card"
+        class="flex flex-col items-center w-full max-w-xl col-span-2 p-5 mx-auto bg-white shadow md:flex-row rounded-2xl"
+      >
+        <img
+          src="./img/mepic.jpg"
+          alt="Profile Picture"
+          class="transition-all duration-700 border-4 rounded-full w-36 h-36 border-burlywood hover:w-40 hover:h-40"
+        />
+        <div class="mt-4 text-center md:ml-5 md:text-left md:mt-0">
+          <h2 class="text-xl font-bold">Ahmad Masood</h2>
+          <p>I'm currently working on Web Development.</p>
+          <p>I'm looking to collaborate on Website Development.</p>
+          <a
+            href="https://github.com/AhmadMasood-dev"
+            target="_blank"
+            class="block mt-2 text-blue-500 hover:text-burlywood"
+            >GitHub Account</a
+          >
+        </div>
+      </section>
+
+      <footer class="col-span-2 mt-5 text-sm text-center text-gray-600">
+        <p>&copy; 2025 Ahmad Masood.</p>
+      </footer>
+    </div>
+  </body>
+</html>
